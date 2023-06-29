@@ -1,9 +1,10 @@
 function customFilter(arr, callback) {
   var result = [];
-
+  var j=0;
   for (var i = 0; i < arr.length; i++) {
     if (callback(arr[i])) {
-      resultpush(arr[i]);
+      result[j] = arr[i];
+      j++;
     }
   }
 
